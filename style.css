@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.screen1{    
+    position: relative;
+    top:200px;          /*making scrren 1 and display in center of page with bg-color gary*/
+    width:150px;
+    height: 200px;
+    background-color: gray;
+    margin: auto;
+    border-radius: 40px;
+}
+.screen2{              /*making screen 2 inside screen 1 with bg-color black*/
+    position: relative;
+    top:16px;
+    width:150px;
+    height:168px;
+    background-color: black;
+    border-radius: 40px;
+}
+.screen3{                /*first screen ie default screen is replaced with next screen ie screen1*/
+    height:115px;        /* this screen contain list of msgs*/
+    width:120px;
+    margin: auto;
+    background-color:white;
+    border-radius: 25px;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.screen4{                        /*replace sceen1 with screen2 and this screen display the body of msg*/
+        height:115px;
+        width:120px;
+        margin: auto;
+        background-color:white;
+        border-radius: 25px;
+}
+/*small_time inside screen2*/
+.time_small{           
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size:xx-small;
+}/*for time and day*/
+.time_day{
+    height:115px;
+    width:120px;
+    margin: auto;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    border-radius: 25px;
+}
+.time_big{
+    font-size: xx-large;
+}
+.day{
+    font-size: small;
+    color: white;
+}
+.images{    /*positioning the images as absolute ie based on its anchestor small_time*/
+    position: absolute;         /*displaying the final items as flex*/
+    top:135px;
+    width:150px;
+    display: flex;
+    justify-content: space-around;
+}
+.chat,.music,.clock{
+    color: white;
+    font-size: 20px;
+}
